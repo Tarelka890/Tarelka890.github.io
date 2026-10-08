@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Подключаем Bootstrap и DataTables через стабильный международный cdnjs -->
+    <link rel="stylesheet" href="https://cloudflare.com" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbW6ObfXwXMOb6qU491IFf4ZYkMHZO65h79E5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link class="stylesheet" href="https://cloudflare.com" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cats</title>
+
+    <style>
+        .footer { margin-top: 80px; padding: 20px 0; background-color: #f8f9fa; }
+        h1 { margin-top: 5px; }
+        .post-name {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .cat-card img {
+            height: 180px;
+            object-fit: cover;
+            background-color: #e9ecef;
+        }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Cats</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Top
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Python</a>
+              <a class="dropdown-item" href="#">Javascript</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">All</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<main role="main" class="container">
+  <div class="starter-template">
+    <br/>
+    
+    <!-- 1) Заголовки, блочные элементы и списки -->
+    <header class="mb-4">
+        <h1>Породы кошек и виды котов</h1>
+        <p class="lead">Мир кошек удивителен и разнообразен. Изучите популярные породы ниже.</p>
+    </header>
+
+    <section class="bg-light p-3 rounded mb-4">
+        <h2>Основные категории</h2>
+        <p>Кошек разделяют на несколько ключевых типов шерсти:</p>
+        <ul>
+            <li>Длинношерстные кошки (Мейн-кун, Персидская)</li>
+            <li>Короткошерстные кошки (Британская, Сиамская)</li>
+            <li>Бесшерстные кошки (Канадский сфинкс)</li>
+        </ul>
+    </section>
+
+    <!-- 2) Адаптивная Bootstrap-сетка: 6 картинок (перестраивается под любые экраны) -->
+    <h3 class="mb-3">Галерея кошек</h3>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-4">
+            <div class="card h-100 cat-card">
+                <img src="https://placecats.com" class="card-img-top" alt="Кошка 1">
+                <div class="card-body p-2">
+                    <h5 class="post-name text-center">Шотландская</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-4">
+            <div class="card h-100 cat-card">
+                <img src="https://placecats.com" class="card-img-top" alt="Кошка 2">
+                <div class="card-body p-2">
+                    <h5 class="post-name text-center">Британская</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-4">
+            <div class="card h-100 cat-card">
+                <img src="https://placecats.com" class="card-img-top" alt="Кошка 3">
+                <div class="card-body p-2">
+                    <h5 class="post-name text-center">Мейн-кун</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-4">
+            <div class="card h-100 cat-card">
+                <img src="https://placecats.com" class="card-img-top" alt="Кошка 4">
+                <div class="card-body p-2">
+                    <h5 class="post-name text-center">Сиамская</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-4">
+            <div class="card h-100 cat-card">
+                <img src="https://placecats.com" class="card-img-top" alt="Кошка 5">
+                <div class="card-body p-2">
+                    <h5 class="post-name text-center">Бенгальская</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-4">
+            <div class="card h-100 cat-card">
+                <img src="https://placecats.com" class="card-img-top" alt="Кошка 6">
+                <div class="card-body p-2">
+                    <h5 class="post-name text-center">Сфинкс</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+</main>
+
+<div class="footer text-center text-muted">
+    <div class="container">
+        <span>© 2026 Разработано по инструкции GitHub Pages</span>
+    </div>
+</div>
+
+    <!-- Внешние JS-скрипты -->
+    <script src="https://cloudflare.com" crossorigin="anonymous"></script>
+    <script src="https://cloudflare.com" integrity="sha512-iceXjjbmB2rwoX93Ka6HAHP+B76ZovzkF3clJuHQfga3RoSm1NXf2acqnZHBXJDYM6afSgyv9wZ974Ygbb16UA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cloudflare.com" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cloudflare.com" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Инициализация таблицы DataTables (если добавите её в разметку)
+            $('.table').DataTable();
+        });
+    </script>
+  </body>
+</html>
+
